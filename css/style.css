@@ -1,55 +1,67 @@
-* {
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css";
+
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: sans-serif;
+    background-image: url(../img/background-forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.left {
-    width: 50%;
-    height: 625px;
-    background-color: #0E6655;
+
+.login-box {
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
 }
-#titleSistema {
-    color: #ECF0F1;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-    font-size: 36px;
+
+.login-box h1 {
+    float: left;
+    font-size: 38px;
+    border-bottom: 7px solid #4caf50;
+    margin-bottom: 52px;
+    padding: 14px 0;
+}
+
+.textbox {
+    width: 100%;
+    overflow: hidden;
+    font-size: 22px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #3cb371;
+}
+
+.textbox i {
+    width: 26px;
+    float: left;
     text-align: center;
-    padding-top: 30%; 
 }
-#subtitulosistema {
-    color: #ECF0F1;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+
+.textbox input {
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
     font-size: 16px;
-    text-align: center;
-    padding: 10px 50px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
 }
-.login {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-    font-size: 36px;
-    text-align: center;
-    margin-top: -500px;
-    padding-left: 50%;
-    color: #0E6655;
-}
-.formulario {
-    margin: 30px 0 0 65%;
-}
-.nome, .senha {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+
+.btn-logar {
+    width: 100%;
+    background: none;
+    border: 2px solid #3cb371;
+    color: #fff;
+    cursor: pointer;
+    margin: 18px 0;
     font-size: 16px;
-    margin: 5px 10px;
-    width: 150px;
-    height: 20px;
-    border-radius: 20px;
-    border-style: solid;
-    color: #0E6655;
+    padding: 4px 0;
 }
-.btn_submit{
-    color: #ECF0F1;
-    font-size: 14px; 
-    margin: 15px 0 0 0;
-    background-color: #0E6655;
-    border-radius: 30px;
-    border-style: none;
-    padding: 10px 0;
-    width: 207px;
+::placeholder {
+    color: rgb(221, 221, 221);
 }
